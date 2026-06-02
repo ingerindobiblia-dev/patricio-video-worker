@@ -8,9 +8,8 @@ app.get('/', (req, res) => {
 });
 
 app.post('/render', (req, res) => {
-  console.log('✅ Job recebido do Lovable:', req.body);
+  console.log('✅ Job recebido:', req.body);
   
-  // Resposta temporária (vamos melhorar depois)
   res.json({ 
     success: true, 
     message: 'Job recebido com sucesso',
